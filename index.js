@@ -30,7 +30,7 @@ client.on('messageCreate', async (msg) => {
     await msg.channel.sendTyping();
 
     const res = await groq.chat.completions.create({
-      model: 'llama-3.3-70b-versatile',
+      model: 'openai/gpt-oss-20b',
       messages: [
         {
           role: 'system',
